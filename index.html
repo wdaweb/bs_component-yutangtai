@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/bootstrap.css">
+  <script defer src="/js/brands.js"></script>
+  <script defer src="/js/solid.js"></script>
+  <script defer src="/js/fontawesome.js"></script>
   <title>bs_component</title>
   <style>
     *{
@@ -17,12 +20,53 @@
       overflow-x: hidden;
       transition: .3s;
     }
+    .nav-link {
+      color: rgb(150, 150, 150);
+      font-size: 12px;
+    }
+    .nav-link:hover {
+      color: rgb(243, 247, 44);
+    }
+    #header-carousel {
+      margin-top: 55px;
+    }
   </style>
 </head>
 <body>
   <div class="container-fluid h-100 p-0">
-    <!-- 跑馬燈 -->
-    <div id="header" class="mb-5">
+    <!-- navbar -->
+    <div id="header-navbar">
+      <nav class="navbar navbar-expand-lg fixed-top" style="background: black;">
+        <a class="navbar-brand" href="#" style="color: white;">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-flex justify-content-center align-items-center" style="color: rgb(88, 88, 88); font-size: 1.5rem;">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarContent">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link5</a>
+            </li>
+          </ul>
+        </div>        
+      </nav>      
+    </div>
+
+    <!-- 幻燈片 -->
+    <div id="header-carousel" class="mb-5">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -31,13 +75,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://picsum.photos/1920/800/?random=1" class="d-block w-100">
+            <img src="https://picsum.photos/1920/1000/?random=1" class="d-block w-100">
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/1920/800/?random=2" class="d-block w-100">
+            <img src="https://picsum.photos/1920/1000/?random=2" class="d-block w-100">
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/1920/800/?random=3" class="d-block w-100">
+            <img src="https://picsum.photos/1920/1000/?random=3" class="d-block w-100">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
