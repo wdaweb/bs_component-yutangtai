@@ -12,12 +12,14 @@
       height: 100vh;
       width: 100vw;
       overflow-x: hidden;
+      transition: .3s;
     }
   </style>
 </head>
 <body>
   <div class="container-fluid h-100 p-0">
-    <div id="header">
+    <!-- 跑馬燈 -->
+    <div id="header" class="mb-5">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -44,8 +46,10 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    </div>
 
-    <div id="content_one" class="container">
+    <!-- 三欄 -->
+    <div id="content_one" class="container mb-5">
       <div class="row flex-column flex-lg-row justify-content-center my-lg-5">
         <div class="col">
           <div class="card w-100 h-100">
@@ -77,39 +81,45 @@
       </div>
     </div>
 
+    <!-- 二列二欄 -->
     <div id="content_two" class="mb-5">
       <div class="row flex-column flex-lg-row">
-        <div class="col col-lg-6 p-0 text-center order-lg-0">
-          <div class="card w-100 h-100">
+        <div class="col col-md-6 col-lg-6 p-0 mx-auto text-center order-lg-0">
+          <div class="card">
             <img src="https://picsum.photos/800/500/?random=7" class="card-img-top" alt="...">
           </div>
         </div>
-        <div class="col col-lg-6 p-0 text-center order-lg-1">
-          <div class="card w-100 h-100" style="background: rgb(224, 224, 224);">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto magni rerum aspernatur dolorum error voluptatum, quisquam beatae quis blanditiis.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col col-md-6 col-lg-6 p-0 mx-auto text-center order-lg-1">
+          <div class="card h-100" style="background: rgb(224, 224, 224);">
+            <div class="card-body p-0 d-flex">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat tempore nemo. Officiis delectus aut expedita optio cupiditate harum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi, repellendus adipisci molestiae dignissimos aut exercitationem deleniti quaerat quas maiores.</p>
+                <a href="#" class="btn btn-success">Go somewhere</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col col-lg-6 p-0 text-center order-lg-3">
-          <div class="card w-100 h-100" >
+        <div class="col col-md-6 col-lg-6 p-0 mx-auto text-center order-lg-3">
+          <div class="card" >
             <img src="https://picsum.photos/800/500/?random=9" class="card-img-top" alt="...">
           </div>
         </div>
-        <div class="col col-lg-6 p-0 text-center order-lg-2">
-          <div class="card w-100 h-100" style="background: rgb(224, 224, 224);">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat tempore nemo. Officiis delectus aut expedita optio cupiditate harum modi.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col col-md-6 col-lg-6 p-0 mx-auto text-center order-lg-2">
+          <div class="card h-100" style="background: rgb(224, 224, 224);">
+            <div class="card-body p-0 d-flex">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat tempore nemo. Officiis delectus aut expedita optio cupiditate harum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eligendi, repellendus adipisci molestiae dignissimos aut exercitationem deleniti quaerat quas maiores.</p>
+                <a href="#" class="btn btn-success">Go somewhere</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- 個人資料 -->
     <div id="footer"></div>
   </div>
 
